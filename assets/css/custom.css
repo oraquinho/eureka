@@ -1,0 +1,167 @@
+tr.countingDown td{
+	color: #ccc !important;
+}
+
+tr.countingDown td img, tr.countingDown td button {
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+tr.countingDown td .progress {
+	opacity: 0.6;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+tr.countingDown:hover > td {
+	color: #333 !important;
+}
+
+tr.countingDown:hover > td img , tr.countingDown:hover > td .progress, tr.countingDown:hover > td button {
+	opacity: 0.9;
+	filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+
+.weatherContainer {
+	position:relative;
+	overflow:hidden; 
+	overflow: hidden;
+	height:35px; 
+	margin: 0;
+	background-color: #141619;
+}
+.weatherBack {
+	position: relative; 
+	float: left;
+	height: 35px; 
+	margin: 0; 
+	display: inline-block;
+	background-repeat: repeat;
+	box-sizing: border-box;
+	border-bottom: 2px solid #444; 
+	border-right: 3px solid #444;
+	background-color: #141619;
+}
+
+.progress-bar-striped, .progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.35) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.35) 50%,rgba(255,255,255,.35) 75%,transparent 75%,transparent);
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.35) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.35) 50%,rgba(255,255,255,.35) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.35) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.35) 50%,rgba(255,255,255,.35) 75%,transparent 75%,transparent);
+}
+
+.tableSM tbody tr td {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+}
+
+.tableSM {
+	color: #333 !important;
+}
+
+.progress {
+    background-color: rgba(255,255,255,0.2) !important;
+}
+.progress-bar-wind {
+	background-color: #82E188;
+}
+.aspect-wind {
+	border-color: #82E188 !important;
+	color: #82E188 !important;
+}
+
+.progress-bar-fire {
+	background-color: #F3CDAB;
+}
+.aspect-fire {
+	border-color: #F3CDAB !important;
+	color: #F3CDAB !important;
+}
+
+.progress-bar-ice {
+	background-color: #B6FFFF;
+}
+.aspect-ice {
+	border-color: #B6FFFF !important;
+	color: #B6FFFF !important;
+}
+
+.progress-bar-earth {
+	background-color: #FBF9CA;
+}
+.aspect-earth {
+	border-color: #FBF9CA !important;
+	color: #FBF9CA !important;
+}
+
+.progress-bar-lightning {
+	background-color: #FFC1FF;
+}
+.aspect-lightning {
+	border-color: #FFC1FF !important;
+	color: #FFC1FF !important;
+}
+
+.progress-bar-water {
+	background-color: #B8D9FE;
+}
+.aspect-water {
+	border-color: #B8D9FE !important;
+	color: #B8D9FE !important;
+}
+
+.aspect-water:hover, .aspect-earth:hover, .aspect-ice:hover, .aspect-fire:hover, .aspect-wind:hover, .aspect-lightning:hover {
+	background-color: #141619!important;
+}
+
+.animationload {
+    background-color: #fff;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+.osahanloading {
+    animation: 1.5s linear 0s normal none infinite running osahanloading;
+    background: url(../img/cache.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background: #fed37f none repeat scroll 0 0;*/
+    border-radius: 1000px;
+    height: 100px;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: absolute;
+    top: 50%;
+    width: 100px;
+}
+.osahanloading::after {
+    animation: 1.5s linear 0s normal none infinite running osahanloading_after;
+    border-color: #85d6de transparent;
+    border-radius: 160px;
+    border-style: solid;
+    border-width: 10px;
+    content: "";
+    height: 160px;
+    left: -30px;
+    position: absolute;
+    top: -30px;
+    width: 160px;
+}
+@keyframes osahanloading {
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    /*background: #85d6de none repeat scroll 0 0;*/
+	background: url(../img/cache.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+    transform: rotate(180deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
