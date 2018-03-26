@@ -5,6 +5,17 @@ A tool to help users collaborate and track Notorious Monsters in Eureka, in Fina
 * [PHP 7](http://php.net/downloads.php)
 * [MySQL 5.5](https://dev.mysql.com/downloads/installer/)
 
+## Setting Up Apache
+* Create an .htaccess within your `/track/` folder
+```
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /track/
+
+RewriteRule ^([a-z0-9_-]+)$ /track/show.php?slug=$1 [L,NC]
+</IfModule>
+```
+
 ## Setting Up the Database
 * Run `/core/database.sql` on your MySQL database
 
